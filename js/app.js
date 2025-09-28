@@ -298,4 +298,23 @@ class SaberHealthyAir {
     loadHistory() {
         // In a production app, load from localStorage or server
         try {
-            console.
+            console.og('Loading history from storage (not implemented in demo)');
+            // Example implementation:
+            // const savedData = localStorage.getItem('saberHealthyAirData');
+            // if (savedData) {
+            //     const data = JSON.parse(savedData);
+            //     this.history = data.history || [];
+            //     this.goodAirTime = data.goodAirTime || 0;
+            //     this.locationsChecked = data.locationsChecked || 0;
+            //     this.aqiReadings = data.aqiReadings || [];
+            // }
+        } catch (error) {
+            console.error('Error loading history:', error);
+        }
+    }
+}
+
+// Initialize the application when the DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new SaberHealthyAir();
+});
