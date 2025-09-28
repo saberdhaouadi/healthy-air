@@ -1,13 +1,6 @@
 {
   "buildCommand": "",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "installCommand": "",
-  "framework": null,
-  "functions": {},
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "framework": null
 }

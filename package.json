@@ -2,11 +2,11 @@
   "name": "saber-healthy-air",
   "version": "1.0.0",
   "description": "Your guardian for clean air monitoring",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
-    "start": "npx http-server -p 3000",
-    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
-    "test": "echo 'No tests specified'"
+    "start": "npx http-server public -p 3000",
+    "build": "echo 'Static files ready in public directory'",
+    "dev": "npx http-server public -p 3000"
   },
   "keywords": [
     "air-quality",
@@ -22,13 +22,5 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/saber-healthy-air.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yourusername/saber-healthy-air/issues"
-  },
-  "homepage": "https://github.com/yourusername/saber-healthy-air#readme"
+  }
 }
